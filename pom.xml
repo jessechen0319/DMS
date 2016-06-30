@@ -110,6 +110,6 @@
             </configuration>
         </plugin>
     </plugins>
-    <finalName>test</finalName>
+    <finalName>DMS</finalName>
 </build>
 </project>
