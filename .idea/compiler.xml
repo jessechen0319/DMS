@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="DMS" />
+        <module name="dms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DMS" target="1.6" />
+      <module name="dms" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
