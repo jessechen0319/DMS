@@ -15,7 +15,7 @@
 	<!-- <bean id="studentJDBCTemplate" class="com.yiibai.StudentJDBCTemplate">
 		<property name="dataSource" ref="dataSource" />
 	</bean> -->
-	<!-- <bean id="testBeanDAOImpl" class="com.amd.dms.test.db.TestBeanDAOImpl">
+	<bean id="testBeanDAOImpl" class="com.amd.dms.test.db.TestBeanDAOImpl">
 		<property name="dataSource" ref="dataSource" />
-	</bean> -->
+	</bean> 
 </beans>

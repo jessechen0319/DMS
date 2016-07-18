@@ -40,19 +40,18 @@
 	flex: 3;
 	border-right: 1px solid white;
 	overflow: hidden;
-	
 }
 
 .content-title {
-    position: absolute;
-    top: 10px;
-    left: 5%;
-    font-size: 15pt;
-    color: wheat;
-    font-family: cursive;
-    min-width: 150px;
-    border-bottom: 2px solid wheat;
-    padding-bottom: 3px;
+	position: absolute;
+	top: 10px;
+	left: 5%;
+	font-size: 15pt;
+	color: wheat;
+	font-family: cursive;
+	min-width: 150px;
+	border-bottom: 2px solid wheat;
+	padding-bottom: 3px;
 }
 
 .menu {
@@ -113,35 +112,59 @@ input.login-submit {
 }
 
 input.register-email {
-    min-width: 100px;
-    max-width: 300px;
-    margin-top: 100px;
-    margin-left: 10%;
+	min-width: 100px;
+	max-width: 300px;
+	margin-top: 100px;
+	margin-left: 10%;
 }
 
 input.register-submit {
-    min-width: 100px;
-    max-width: 150px;
-    margin-top: 50px;
-    margin-left: 10%;
-    background-color: #a1f99a;
+	min-width: 100px;
+	max-width: 150px;
+	margin-top: 50px;
+	margin-left: 10%;
+	background-color: #a1f99a;
 }
 
 .error-message-container {
+	position: absolute;
+	right: 0;
+	max-width: 400px;
+	top: 10px;
+	z-index: 1000;
+}
+
+.error-message {
+	background: yellow;
+	padding: 10px 40px 10px 20px;
+	margin-top: 10px;
+	z-index: 1000;
+	border-radius: 5px;
+	position: relative;
+}
+.error-message > .cancel-span {
     position: absolute;
-    right: 0;
-    max-width: 100px;
-    top: 10px;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
 }
 
-@keyframes rightToLeftRelatvie
-{
-from {left: 100%;}
-to {left: 0;}
+@
+keyframes rightToLeftRelatvie {
+	from {left: 100%;
 }
 
-@keyframes leftToRightAbsolute
-{
-from {right: 100%;}
-to {right: 0;}
+to {
+	left: 0;
+}
+
+}
+@
+keyframes leftToRightAbsolute {
+	from {right: 100%;
+}
+
+to {
+	right: 0;
+}
 }

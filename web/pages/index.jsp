@@ -16,12 +16,10 @@
 <body ng-app="dms" ng-controller="IndexController">
 
 	<div class="page-title">Device Management System</div>
-	<div class="error-message-container">
-		<div class="errorMessage">
-			Please input email address
-		</div>
-		<div class="errorMessage">
-			Please input user name
+	<div class="error-message-container" >
+		<div class="error-message" ng-repeat="errorMessage in errorMessages">
+			{{errorMessage}}
+			<span class="cancel-span" ng-click="removeMessage($index)">X</span>
 		</div>
 	</div>
 
@@ -36,7 +34,7 @@
 			</div>
 			
 			<div ng-show="isLoginNeeded && isRegister" class="full-content">
-				<input type="email" class="form-control register-email" name="registerEmail" placeholder="Official Email Address" />
+				<input type="email" class="form-control register-email" ng-model="registerEmail" name="registerEmail" placeholder="Official Email Address" />
 				<input type="button" class="form-control register-submit" ng-click="submitRegister()" value="Register" />
 			</div>
 			

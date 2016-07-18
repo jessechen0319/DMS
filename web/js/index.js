@@ -21,22 +21,28 @@ app.controller('IndexController', function($scope, $http) {
 		$scope.isLogin = false;
 		$scope.contentTitle = "Register";
 	};
+	
+	$scope.removeMessage = function(index){
+		$scope.errorMessages.splice(index, 1);
+	};
 
 	$scope.submitRegister = function() {
 		
 		console.log("register start");
-
+		$scope.isShowLoading = true;
 		$http({
 			method : "GET",
 			url : "register/confirm",
 			headers: {'Content-type': 'application/json;charset=UTF-8'},
 			params : {
-				'registerEmail' : 'jessetest'
+				'registerEmail' : $scope.registerEmail
 			}
 		}).success(function(data, status) {
-			console.log("success");
+			$scope.errorMessages.push("Your password has been sent to your email, please check.");
+			$scope.isShowLoading = false;
 		}).error(function(data, status) {
-			console.log("failed");
+			$scope.errorMessages.push("error happened during sending email, please contact your admin.");
+			$scope.isShowLoading = false;
 		});
 	};
 

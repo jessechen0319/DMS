@@ -9,7 +9,7 @@ public class TestBeanTest {
 	@Test
 	public void test() {
 		ApplicationContext context = 
-	             new ClassPathXmlApplicationContext("classpath:spring-config.xml");
+	             new ClassPathXmlApplicationContext("classpath:test-spring.xml");
 
 	      TestBeanDAOImpl studentJDBCTemplate = 
 	      (TestBeanDAOImpl)context.getBean("testBeanDAOImpl");
